@@ -35,6 +35,7 @@ Two versions of the pipeline are maintained
 2. Script Version (.py)
    * Sutiable for production deployment
    * Supports Version Control, Modularity, Automation and CI/CD integration
+     
 **Local Development using Databricks Connect and PySpark are deployed**
 
 ## CI/CD Workflow
