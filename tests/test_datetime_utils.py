@@ -9,7 +9,7 @@ from src.utils.datetime_utils import timestamp_to_date_col
 def test_timestamp_to_date_col(spark):
 
 
-    data = [(datetime.datetime(2025,4,10,10,30,0))]
+    data = [(datetime.datetime(2025,4,10,10,30,0),)]
     schema = "ride_timestamp timestamp"
     df = spark.createDataFrame(data, schema=schema)
 
