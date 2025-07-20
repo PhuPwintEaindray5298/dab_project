@@ -37,8 +37,10 @@ targets:
       # We explicitly deploy to /Workspace/Users/phoopwint5298@gmail.com to make sure we only have a single copy.
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: phoopwint5298@gmail.com
+      - service_principal_name: 9fbf059b-16a5-41f6-95a7-78ffe7e9219e
         level: CAN_MANAGE
+    run_as:
+      service_principal_name: 9fbf059b-16a5-41f6-95a7-78ffe7e9219e
 
   test:
     mode: production
@@ -52,5 +54,7 @@ targets:
       # We explicitly deploy to /Workspace/Users/phoopwint5298@gmail.com to make sure we only have a single copy.
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: phoopwint5298@gmail.com
+      - service_principal_name: e99a6057-9d2c-4981-abde-0b2b337d1ce1
         level: CAN_MANAGE
+    run_as:
+      service_principal_name: e99a6057-9d2c-4981-abde-0b2b337d1ce1
